@@ -38,6 +38,7 @@ int main() {
             printf("%s\n", input + 5);
             break;
         default:
+            should_break = 0;
             printf("%s: command not found\n", input_copy);
             break;
         }
