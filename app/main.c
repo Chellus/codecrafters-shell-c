@@ -35,7 +35,7 @@ int main() {
             should_break = 1;    
             break;
         case ECHO:
-            printf("%s\n", input + 5);
+            printf("%s", input + 5);
             break;
         default:
             should_break = 0;
