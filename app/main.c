@@ -36,8 +36,10 @@ int main() {
             break;
         case ECHO:
             printf("%s\n", input + 5);
+            break;
         default:
             printf("%s: command not found\n", input_copy);
+            break;
         }
 
         free(input_copy);
