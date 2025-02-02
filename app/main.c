@@ -24,7 +24,7 @@ int main() {
   
         // remove the trailing newline
         input[strlen(input) - 1] = '\0';
-        char* input_copy = (char*)malloc(strlen(input + 1) * sizeof(char));
+        char* input_copy = (char*)malloc((strlen(input) + 1) * sizeof(char));
         strcpy(input_copy, input);
         int command = get_command(input);
         int should_break = 0;
